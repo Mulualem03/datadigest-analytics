@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+venv/
+env/
+.env
+
+# Credentials
+gcp-credentials.json
+*.key
+*.pem
+
+# Data files
+data/
+*.csv
+*.json
+*.parquet
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Docker
+.dockerignore
+
+# Jupyter
+.ipynb_checkpoints/

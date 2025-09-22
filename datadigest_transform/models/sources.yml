@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: raw
+    description: Raw data loaded by Airbyte
+    database: datadigest-analytics-2025
+    schema: datadigest_raw
+    tables:
+      - name: medium_articles
+        description: Medium publication articles
+      - name: twitter_mentions
+        description: Twitter engagement data
+      - name: reddit_submissions
+        description: Reddit submissions
+      - name: web_analytics
+        description: Web traffic analytics

@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: content_performance
+    description: "Unified content performance analytics across all platforms"
+    config:
+      materialized: table
+    columns:
+      - name: url
+        description: "Article URL (primary key)"
+        tests:
+          - unique
+          - not_null
+      - name: social_engagement_score
+        description: "Weighted engagement score: claps + (twitter_likes * 2) + (reddit_upvotes * 3)"
